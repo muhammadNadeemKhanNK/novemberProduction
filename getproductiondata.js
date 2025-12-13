@@ -1,3 +1,5 @@
 let proDtl = JSON.parse(localStorage.getItem("productionDetails")) || [];
 
-console.log(proDtl);
+proDtl.forEach(element => {
+    console.log(element.productName);
+});
