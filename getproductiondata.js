@@ -1,5 +1,7 @@
-let proDtl = JSON.parse(localStorage.getItem("productionDetails")) || [];
+const mainContainerEl = document.querySelector(".main-container");
 
-proDtl.forEach(element => {
-    console.log(element.productName);
-});
+let proDtl = JSON.parse(localStorage.getItem("productionDetails")) || [];
+console.log(Object.keys(proDtl[0]));
+Object.keys(proDtl[0]).forEach(headers => {
+    console.log(headers.toLocaleUpperCase());
+})
